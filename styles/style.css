@@ -1,0 +1,83 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;;
+    min-height: 100vh;
+    
+
+}
+
+/* Estilos para el header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para el main */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para el lado izquierdo */
+.leftSide {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.full-width {
+    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+}
+
+/* Estilos para los artículos en el lado izquierdo */
+.leftSide article {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Estilos para el lado derecho */
+.rightSide {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Estilos para el formulario */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+input, button {
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* *Sección Footer */
+.footer {
+    font-size: 16px;
+    font-weight: medium;
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 1em 0;
+    margin-top: auto;
+}
