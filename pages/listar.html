@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/listar.css">
+        <title>AluraGeek</title>
+    </head>
+    <body>
+        <header>
+            <img class="menu__logo" src="..\assets\images\logo.png" alt="Logo de AluraGeek">
+            <h1 class="menu__title">AluraGeek</h1>
+        </header>
+        <main class="grid-container">
+            <section class="registerSide">
+                <nav class="menu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__list__item">
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li class="menu__list__item">
+                            <a href="registrar.html">Registrar</a>
+                        </li>
+                        <li class="menu__list__item">
+                            <a href="listar.html">Listar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="registerSide" id="table-wrapper">
+                <h1>Listar Productos</h1>
+                    <table id="tabla-productos">
+                        <tr>
+                            <th>ID</th>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>Subcategoría</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Invent</th>
+                            <th>Desc</th>
+                            <th>IVA</th>
+                            <th>Seleccionar</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Imagen 1</td>
+                            <td>Producto 1</td>
+                            <td>Categoría 1</td>
+                            <td>Subcategoría 1</td>
+                            <td>Descripción 1</td>
+                            <td>$10.00</td>
+                            <td>10</td>
+                            <td>Sí</td>
+                            <td>0%</td>
+                            <td>Si</td>
+                            <td>
+                                <select>
+                                    <option value="editar">Editar</option>
+                                    <option value="eliminar">Eliminar</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Imagen 2</td>
+                            <td>Producto 2</td>
+                            <td>Categoría 2</td>
+                            <td>Subcategoría 2</td>
+                            <td>Descripción 2</td>  
+                            <td>$20.00</td>
+                            <td>20</td>
+                            <td>Sí</td>
+                            <td>0%</td>
+                            <td>Si</td>
+                            <td>
+                                <select>
+                                    <option value="editar">Editar</option>
+                                    <option value="eliminar">Eliminar</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- Agrega más filas aquí -->
+                    </table>
+            </section>
+        </main>
+        <!-- Sección de Footer -->
+        <section class="footer">
+            <div class="footer__rodape">
+                <p>Desarrollado por Flor María Labanda Puchaicela</p>
+                <p>Mayo de 2024</p>
+            </div>
+        </section>
+    </body>
+</html>

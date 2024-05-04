@@ -1,0 +1,34 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+#toggle-columns-btn {
+    display: none; /* Ocultar el botón de editar */
+}
+
+/* Estilos adicionales para ajustar la tabla */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.registerSide {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
