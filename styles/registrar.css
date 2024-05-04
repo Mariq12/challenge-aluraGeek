@@ -1,0 +1,69 @@
+/* Estilos para el main */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.menu__nav {
+    display: block;
+}
+/* Estilo para la lista del menú */
+.menu__list {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: medium;
+    list-style-type: none;
+}
+/* Estilo para los elementos de la lista del menú */
+.menu__list__item {
+    margin-right: 35px;
+}
+.menu__list__item a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+.menu__list__item a:hover {
+    color: red;
+}
+/* Estilo para el elemento de contacto en la lista del menú */
+
+
+/* Estilos para el lado derecho */
+.registerSide {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Estilos para el formulario */
+form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+input, button {
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    width: calc(50% - 5px);
+    margin: auto;
+}
+button:hover {
+    background-color: #555;
+}
+
+/* *MEDIA QUERIES* */
+/* Consulta de medios para cambiar a una sola columna en pantallas más pequeñas */
+@media screen and (min-width: 768px) {
+    form {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas más grandes */
+    }
+    
+}
