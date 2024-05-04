@@ -32,8 +32,66 @@ header {
     text-align: center;
 }
 
+.menu__nav {
+    display: block;
+}
+/* Estilo para la lista del menú */
+.menu__list {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: medium;
+    list-style-type: none;
+}
+/* Estilo para los elementos de la lista del menú */
+.menu__list__item {
+    margin-right: 35px;
+}
+.menu__list__item a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+.menu__list__item a:hover {
+    color: red;
+}
+.menu__list__item__header a {
+    margin-right: 45px;
+    color: white;
+    text-decoration: none;
+}
 
 
+/* *Estilos para el main */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para el lado izquierdo */
+.homeSide {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.full-width {
+    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+    text-align: center;
+}
+
+/* Estilos para los artículos en el lado izquierdo */
+.homeSide article {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    height: 35vh;
+}
 
 /* *Sección Footer */
 .footer {
