@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/registrar.css">
-    <title>AluraGeek</title>
-</head>
-<body>
-    <header>
-        <img class="menu__logo" src="..\assets\images\logo.png" alt="Logo de AluraGeek">
-        <h1 class="menu__title">AluraGeek</h1>
-        
-    </header>
-    <main class="grid-container">
-        <section class="registerSide">
-            <nav class="menu__nav">
-                <ul class="menu__list">
-                    <li class="menu__list__item">
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li class="menu__list__item">
-                        <a href="#registrar">Registrar</a>
-                    </li>
-                    <li class="menu__list__item">
-                        <a href="listar.html">Listar</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/registrar.css">
+        <title>AluraGeek</title>
+    </head>
+    <body>
+        <header>
+            <img class="menu__logo" src="..\assets\images\logo.png" alt="Logo de AluraGeek">
+            <h1 class="menu__title">AluraGeek</h1>
+        </header>
+        <main class="grid-container">
             <section class="registerSide">
-            <h1>Agregar Producto</h1>
-            <form>
-                <input type="text" placeholder="Nombre del producto">
-                <input type="text" placeholder="Categoría del producto">
-                <input type="text" placeholder="Subcategoría del producto">
-                <input type="text" placeholder="Descripción del producto">
-                <input type="number" placeholder="Precio del producto">
-                <input type="number" placeholder="Cantidad del producto">
-                <input type="text" placeholder="Inventariado"> 
-                <input type="number" placeholder="Descuento">
-                <input type="text" placeholder="Tipo de IVA">
-                <input type="text" placeholder="URL de la imagen">
-                <button type="submit">Agregar</button>
-                <button type="reset">Limpiar</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- Sección de Footer -->
-
+                <nav class="menu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__list__item">
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li class="menu__list__item">
+                            <a href="#registrar">Registrar</a>
+                        </li>
+                        <li class="menu__list__item">
+                            <a href="listar.html">Listar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="registerSide">
+                <h1>Registrar Producto</h1>
+                <form>
+                    <input type="text" placeholder="Nombre del producto *" required>
+                    <select>
+                        <option value="" disabled selected>Seleccione una categoría *</option>
+                        <option value="electronica">Electrónica</option>
+                        <option value="ropa">Ropa</option>
+                    </select>
+                    <select>
+                        <option value="" disabled selected>Seleccione una subcategoría</option>
+                        <option value="televisores">Televisores</option>
+                        <option value="Laptops">Laptops</option>
+                        <option value="pantalones">Pantalones</option>
+                        <option value="blusas">Blusas</option>
+                        <option value="vestidos">Vestidos</option>
+                    </select>
+                    <input type="text" placeholder="Descripción del producto" required>
+                    <input type="number" placeholder="Precio del producto" required>
+                    <input type="number" placeholder="Cantidad del producto" required>
+                    <select>
+                        <option value="" disabled selected>¿Está inventariado?</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                    <input type="number" placeholder="Descuento" required>
+                    <select>
+                        <option value="" disabled selected>Seleccione un tipo de IVA</option>
+                        <option value="conIVA">Con IVA</option>
+                        <option value="sinIVA">Sin IVA</option>
+                    </select>
+                    <input type="text" placeholder="URL de la imagen" required>
+                    <button type="submit">Agregar</button>
+                    <button type="reset">Limpiar</button>
+                </form>
+            </section>
+        </main>
+        <!-- Sección de Footer -->
         <section class="footer">
-        <div class="footer__rodape">
-            <p>Desarrollado por Flor María Labanda Puchaicela</p>
-            <p>Mayo de 2024</p>
-        </div>
-    </section>
-</body>
+            <div class="footer__rodape">
+                <p>Desarrollado por Flor María Labanda Puchaicela</p>
+                <p>Mayo de 2024</p>
+            </div>
+        </section>
+    </body>
 </html>
