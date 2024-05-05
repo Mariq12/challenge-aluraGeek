@@ -38,13 +38,12 @@
                                 <th>Imagen</th>
                                 <th>Nombre</th>
                                 <th>Categoría</th>
-                                <th>Subcategoría</th>
                                 <th>Descripción</th>
                                 <th>Precio</th>
                                 <th>Cantidad</th>
-                                <th>Invent</th>
+                                <th>Tipo IVA</th>
                                 <th>Desc</th>
-                                <th>IVA</th>
+                                
                                 <th>Seleccionar</th>
                             </tr>
                             <tr>
@@ -55,14 +54,16 @@
                                 <td>Subcategoría 1</td>
                                 <td>Descripción 1</td>
                                 <td>$10.00</td>
-                                <td>10</td>
                                 <td>Sí</td>
                                 <td>0%</td>
-                                <td>Si</td>
-                                <td>
-                                    <select>
-                                        <option value="editar">Editar</option>
-                                        <option value="eliminar">Eliminar</option>
+                                <td class="container-icons">
+                                    <figure class="icons">
+                                        <img src="..\assets\icons\editar.png" alt="Icono de editar">
+                                    </figure>
+                                    <select class="control-select">
+                                        <option value=""></option>
+                                        <option class="option-editar" value="editar">Editar</option>
+                                        <option class="option-eliminar" value="eliminar">Eliminar</option>
                                     </select>
                                 </td>
                             </tr>
@@ -74,14 +75,13 @@
                                 <td>Subcategoría 2</td>
                                 <td>Descripción 2</td>  
                                 <td>$20.00</td>
-                                <td>20</td>
                                 <td>Sí</td>
                                 <td>0%</td>
-                                <td>Si</td>
                                 <td>
-                                    <select>
-                                        <option value="editar">Editar</option>
-                                        <option value="eliminar">Eliminar</option>
+                                    <select class="control-select">
+                                        <option value=""></option>
+                                        <option class="option-editar" value="editar">Editar</option>
+                                        <option class="option-eliminar" value="eliminar">Eliminar</option>
                                     </select>
                                 </td>
                             </tr>
@@ -97,5 +97,6 @@
                 <p>Mayo de 2024</p>
             </div>
         </section>
+        <script src="../js/listar.js" type="module"></script>
     </body>
 </html>

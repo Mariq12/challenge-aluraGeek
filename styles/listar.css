@@ -33,3 +33,27 @@ th {
     background-color: rgb(226, 224, 224);
     z-index: 1;
 }
+
+.container-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+} 
+.control-select {
+    border: none;
+    width: 20px;
+    background-color: rgb(226, 224, 224);
+    margin-right: 10px;
+}
+
+
+
+.icons img {
+    margin-left: 0;
+    transition: transform 0.3s ease;
+}
+
+.icons:hover {
+    transform: scale(1.2);
+}
