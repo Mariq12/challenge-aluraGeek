@@ -1,10 +1,28 @@
+.listarSide {
+    background: var(--cor-background);
+    padding: 20px;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 3vh;
+}
+
+.listarSide__table {
+    overflow-x: auto;
+    min-width: 90%;
+    min-height: fit-content;
+    padding: 1rem;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+
 th, td {
-    border: 1px solid black;
+    border: 1px solid rgb(224, 220, 220);
     padding: 8px;
     text-align: center;
 }
@@ -12,23 +30,6 @@ th, td {
 th {
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: rgb(226, 224, 224);
     z-index: 1;
-}
-
-#toggle-columns-btn {
-    display: none; /* Ocultar el botón de editar */
-}
-
-/* Estilos adicionales para ajustar la tabla */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-
-.registerSide {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 5px;
 }

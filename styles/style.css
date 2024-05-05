@@ -77,7 +77,6 @@ header {
     text-decoration: none;
 }
 
-
 /* *Estilos para el main */
 .grid-container {
     display: grid;
@@ -88,7 +87,8 @@ header {
 }
 
 h2 {
-    color: var(--cor-text-border)
+    color: var(--cor-text-border);
+    text-align: center;
 }
 /* Estilos para el lado izquierdo */
 .homeSide {
