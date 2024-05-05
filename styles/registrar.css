@@ -18,33 +18,44 @@ form {
 
 .formulario__campo {
     border: none;
-    width: 100%;
-    display: flex;
-
-    flex-direction: column;
-}
-.formulario__campo select {
     width: 95%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Estilo adicional para el último campo para evitar espacio extra debajo del formulario */
+.formulario__campo:last-child {
+    margin-bottom: 0;
+}
+
+/* Agrega un estilo de borde cuando se pasa el cursor sobre el campo */
+.campo__completo:hover {
+    border: 1px solid blue;
+    box-shadow: none; 
+}
+
+.formulario__campo select {
+    width: 100%;
     font-size: 13px;
     border: none;
     color: #6f6e6e;
     padding: 1em;
+    margin-right: 10px; 
 }
 .formulario__campo select,
 .formulario__campo input {
-    margin-right: 40px;
-    margin-left: 25px;
+    margin-right: 10px;
 }
 .campo__etiqueta {
     font-weight: 500;
     line-height: 20px;
-    margin-left: 25px;
     font-size: 12px;
     color: blue
+
 }
 .campo__completo {
     display: block;
-    width: 90%;
+    width: 94%;
     padding: 1em;
     font-size: 13px;
     border: none;
@@ -95,7 +106,6 @@ form {
     font-style: italic;
     font-size: .925rem;
     color: red;
-    margin-left: 25px;
     font-size: 12px;
 }
 
