@@ -48,11 +48,12 @@
                         <span class="mensaje-error"></span>
                     </fieldset>
                     <fieldset class="formulario__campo">
-                        <select >
+                        <select name="categoria" id="categoria" required>
                             <option value="" disabled selected>Seleccione una categoría *</option>
                             <option value="electronica">Electrónica</option>
                             <option value="ropa">Ropa</option>
                         </select>
+                        <span class="mensaje-error"></span>
                     </fieldset>
                     <fieldset class="formulario__campo">
                         <input
@@ -61,8 +62,6 @@
                             class="campo__completo"
                             type="text"
                             placeholder="Descripción del producto"
-                            minlength="3"
-                            required
                         >
                         <span class="mensaje-error"></span>
                     </fieldset>
@@ -85,17 +84,18 @@
                             class="campo__completo"
                             type="number"
                             placeholder="Cantidad del producto"
-                            minlength="3"
+                            minlength="1"
                             required
                         >
                         <span class="mensaje-error"></span>
                     </fieldset>
                     <fieldset class="formulario__campo">
-                        <select>
+                        <select name="tipo_iva" id="tipo_iva" required>
                             <option value="" disabled selected>Seleccione tipo de IVA *</option>
                             <option value="conIVA">Con IVA</option>
                             <option value="sinIVA">Sin IVA</option>
                         </select>
+                        <span class="mensaje-error"></span>
                     </fieldset>
                     <fieldset class="formulario__campo">
                         <input
@@ -104,7 +104,7 @@
                             class="campo__completo"
                             type="number"
                             placeholder="Descuento"
-                            minlength="3"
+                            minlength="1"
                             required
                         >
                         <span class="mensaje-error"></span>
@@ -114,7 +114,7 @@
                             name="url"
                             id="url"
                             class="campo__completo"
-                            type="text"
+                            type="url"
                             placeholder="URL de la imagen"
                             minlength="3"
                             required
@@ -153,5 +153,6 @@
                 <p>Mayo de 2024</p>
             </div>
         </section>
+        <script src="../js/script.js" type="module"></script>
     </body>
 </html>
