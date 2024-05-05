@@ -31,63 +31,65 @@
             </section>
             <section class="listarSide">
                 <h2>Listar Productos</h2>
-                    <div class="listarSide__table">
-                        <table id="tabla-productos">
-                            <tr>
-                                <th>ID</th>
-                                <th>Imagen</th>
-                                <th>Nombre</th>
-                                <th>Categoría</th>
-                                <th>Descripción</th>
-                                <th>Precio</th>
-                                <th>Cantidad</th>
-                                <th>Tipo IVA</th>
-                                <th>Desc</th>
-                                
-                                <th>Seleccionar</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Imagen 1</td>
-                                <td>Producto 1</td>
-                                <td>Categoría 1</td>
-                                <td>Subcategoría 1</td>
-                                <td>Descripción 1</td>
-                                <td>$10.00</td>
-                                <td>Sí</td>
-                                <td>0%</td>
-                                <td class="container-icons">
-                                    <figure class="icons">
-                                        <img src="..\assets\icons\editar.png" alt="Icono de editar">
-                                    </figure>
-                                    <select class="control-select">
-                                        <option value=""></option>
-                                        <option class="option-editar" value="editar">Editar</option>
-                                        <option class="option-eliminar" value="eliminar">Eliminar</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Imagen 2</td>
-                                <td>Producto 2</td>
-                                <td>Categoría 2</td>
-                                <td>Subcategoría 2</td>
-                                <td>Descripción 2</td>  
-                                <td>$20.00</td>
-                                <td>Sí</td>
-                                <td>0%</td>
-                                <td>
-                                    <select class="control-select">
-                                        <option value=""></option>
-                                        <option class="option-editar" value="editar">Editar</option>
-                                        <option class="option-eliminar" value="eliminar">Eliminar</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <!-- Agrega más filas aquí -->
-                        </table>
-                    </div>
+                <div class="listarSide__table">
+                    <table id="tabla-productos">
+                        <tr>
+                            <th>ID</th>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Tipo IVA</th>
+                            <th>Descuento</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Imagen 1</td>
+                            <td>Producto 1</td>
+                            <td>Categoría 1</td>
+                            <td>Descripción 1</td>
+                            <td>$10.00</td>
+                            <td>100</td>
+                            <td>Con IVA</td>
+                            <td>0%</td>
+                            <td class="container-icons">
+                                <figure class="icon-editar">
+                                    <img src="..\assets\icons\editar.png" alt="Icono de editar">
+                                </figure>
+                            </td>
+                            <td class="container-icons">
+                                <figure class="icon-eliminar">
+                                    <img src="..\assets\icons\borrar.png" alt="Icono de eliminar">
+                                </figure>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Imagen 2</td>
+                            <td>Producto 2</td>
+                            <td>Categoría 2</td>
+                            <td>Descripción 2</td>
+                            <td>$30.00</td>
+                            <td>150</td>
+                            <td>Sin IVA</td>
+                            <td>20%</td>
+                            <td class="container-icons">
+                                <figure class="icon-editar">
+                                    <img src="..\assets\icons\editar.png" alt="Icono de editar">
+                                </figure>
+                            </td>
+                            <td class="container-icons">
+                                <figure class="icon-eliminar">
+                                    <img src="..\assets\icons\borrar.png" alt="Icono de eliminar">
+                                </figure>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </section>
         </main>
         <!-- Sección de Footer -->

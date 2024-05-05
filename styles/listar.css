@@ -34,12 +34,12 @@ th {
     z-index: 1;
 }
 
-.container-icons {
+/*.container-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
-} 
+} */
 .control-select {
     border: none;
     width: 20px;
