@@ -84,6 +84,7 @@ header {
     grid-template-columns: 1fr;
     grid-gap: 20px;
     padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -96,6 +97,7 @@ h2 {
     grid-gap: 20px;
     background: var(--cor-background);
     padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .full-width {
@@ -110,6 +112,7 @@ h2 {
     padding: 20px;
     margin: 10px;
     height: 35vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* *Sección Footer */
