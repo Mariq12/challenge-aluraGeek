@@ -1,5 +1,5 @@
 .registerSide {
-    background-color: #f9f9f9;
+    background: var(--cor-background);
     padding: 20px;
     margin: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -31,7 +31,7 @@ form {
 
 /* Agrega un estilo de borde cuando se pasa el cursor sobre el campo */
 .campo__completo:hover {
-    border: 1px solid blue;
+    border: 1px solid var(--cor-text-border);
     box-shadow: none; 
 }
 
@@ -39,7 +39,7 @@ form {
     width: 100%;
     font-size: 13px;
     border: none;
-    color: #6f6e6e;
+    color: var(--cor-de-text-form);
     padding: 1em;
     margin-right: 10px; 
 }
@@ -51,7 +51,7 @@ form {
     font-weight: 500;
     line-height: 20px;
     font-size: 12px;
-    color: blue
+    color: var(--cor-text-border)
 
 }
 .campo__completo {
@@ -65,7 +65,7 @@ form {
     transition: all .3s ease;
 }
 .campo__completo:hover {
-    border: 1px solid blue;
+    border: 1px solid var(--cor-text-border);
 }
 
 .formulario__botones {
@@ -74,30 +74,28 @@ form {
 }
 
 .formulario__boton {
-    display: flex;
-    justify-content:center;
-    background-color: blue;
+    background: var(--cor-de-first-gradient);
     display: block;
     border: none;
     padding: 1em 4em;
     border-radius: 10px;
     font-weight: 600;
     font-size: 14px;
-    color:white;
+    color:var(--cor-de-second-text);
     cursor: pointer;
     transition: all .3s ease;
 }
 
 .formulario__boton:hover {
-    background-color: #006eff;
+    background: var(--cor-de-second-gradient);
 }
 
 #eliminar {
-    background-color: red;
+    background: var(--cor-de-third-gradient);
 }
 
 #eliminar:hover {
-    background-color: #f75252;
+    background: var(--cor-de-fourth-gradient);
 }
 
 .mensaje-error {
@@ -106,7 +104,7 @@ form {
     font-weight: 400;
     font-style: italic;
     font-size: .925rem;
-    color: red;
+    color: var(--cor-de-third-text);
     font-size: 12px;
 }
 
