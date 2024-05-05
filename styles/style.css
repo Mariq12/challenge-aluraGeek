@@ -90,30 +90,6 @@ h2 {
     color: var(--cor-text-border);
     text-align: center;
 }
-/* Estilos para el lado izquierdo */
-.homeSide {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
-    background: var(--cor-background);
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.full-width {
-    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
-    text-align: center;
-}
-
-/* Estilos para los artículos en el lado izquierdo */
-.homeSide article {
-    background: var(--cor-de-second-text);
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    height: 35vh;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
 
 /* *Sección Footer */
 .footer {
