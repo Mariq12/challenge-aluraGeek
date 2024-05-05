@@ -1,10 +1,5 @@
 /* Estilos para el main */
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    padding: 3% 5%;
-}
+
 
 /* Estilos para el lado derecho */
 .registerSide {
@@ -26,7 +21,7 @@ form {
     color: blue;
     font-size: 32px;
     width: 100%;
-    margin: 25px auto;
+    margin: 15px auto 20px;
     text-align: center;
 }
 
@@ -72,10 +67,23 @@ form {
     padding: 1em 4em;
     border-radius: 10px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
     color:white;
+    cursor: pointer;
+    transition: all .3s ease;
 }
 
+.formulario__boton:hover {
+    background-color: #006eff;
+}
+
+#eliminar {
+    background-color: red;
+}
+
+#eliminar:hover {
+    background-color: #f75252;
+}
 
 .mensaje-error {
     display: block;
