@@ -30,39 +30,119 @@
                 </nav>
             </section>
             <section class="registerSide">
-                <h1>Registrar Producto</h1>
-                <form>
-                    <input type="text" placeholder="Nombre del producto *" required>
-                    <select>
-                        <option value="" disabled selected>Seleccione una categoría *</option>
-                        <option value="electronica">Electrónica</option>
-                        <option value="ropa">Ropa</option>
-                    </select>
-                    <select>
-                        <option value="" disabled selected>Seleccione una subcategoría</option>
-                        <option value="televisores">Televisores</option>
-                        <option value="Laptops">Laptops</option>
-                        <option value="pantalones">Pantalones</option>
-                        <option value="blusas">Blusas</option>
-                        <option value="vestidos">Vestidos</option>
-                    </select>
-                    <input type="text" placeholder="Descripción del producto" required>
-                    <input type="number" placeholder="Precio del producto" required>
-                    <input type="number" placeholder="Cantidad del producto" required>
-                    <select>
-                        <option value="" disabled selected>¿Está inventariado?</option>
-                        <option value="si">Sí</option>
-                        <option value="no">No</option>
-                    </select>
-                    <input type="number" placeholder="Descuento" required>
-                    <select>
-                        <option value="" disabled selected>Seleccione un tipo de IVA</option>
-                        <option value="conIVA">Con IVA</option>
-                        <option value="sinIVA">Sin IVA</option>
-                    </select>
-                    <input type="text" placeholder="URL de la imagen" required>
-                    <button type="submit">Agregar</button>
-                    <button type="reset">Limpiar</button>
+                <h3 class="banner__titulo">
+                    Registrar Productos
+                </h3>
+            
+                <form class="principal__formulario" data-formulario>
+                    <fieldset class="formulario__campo">
+                        <input
+                            name="nombre"
+                            id="nombre"
+                            class="campo__completo"
+                            type="text"
+                            placeholder="Nombre del producto"
+                            minlength="3"
+                            required
+                        >
+                        <span class="mensaje-error"></span>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <select >
+                            <option value="" disabled selected>Seleccione una categoría *</option>
+                            <option value="electronica">Electrónica</option>
+                            <option value="ropa">Ropa</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <input
+                            name="descripcion"
+                            id="descripcion"
+                            class="campo__completo"
+                            type="text"
+                            placeholder="Descripción del producto"
+                            minlength="3"
+                            required
+                        >
+                        <span class="mensaje-error"></span>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <input
+                            name="precio"
+                            id="precio"
+                            class="campo__completo"
+                            type="number"
+                            placeholder="Precio del producto"
+                            minlength="1"
+                            required
+                        >
+                        <span class="mensaje-error"></span>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <input
+                            name="cantidad"
+                            id="cantidad"
+                            class="campo__completo"
+                            type="number"
+                            placeholder="Cantidad del producto"
+                            minlength="3"
+                            required
+                        >
+                        <span class="mensaje-error"></span>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <select>
+                            <option value="" disabled selected>Seleccione tipo de IVA *</option>
+                            <option value="conIVA">Con IVA</option>
+                            <option value="sinIVA">Sin IVA</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <input
+                            name="descuento"
+                            id="descuento"
+                            class="campo__completo"
+                            type="number"
+                            placeholder="Descuento"
+                            minlength="3"
+                            required
+                        >
+                        <span class="mensaje-error"></span>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <input
+                            name="url"
+                            id="url"
+                            class="campo__completo"
+                            type="text"
+                            placeholder="URL de la imagen"
+                            minlength="3"
+                            required
+                        >
+                        <span class="mensaje-error"></span>
+                    </fieldset>
+                    
+
+                    <div class="formulario__botones">
+                        <button
+                          value="Siguiente"
+                          class="formulario__boton"
+                          id="enviar"
+                          data-boton-enviar
+                          type="submit"
+                        >Registrar</button>
+                        <span class="mensaje-error"></span>
+                    </div>
+                    <div class="formulario__botones">
+                        <button
+                        value="Siguiente"
+                        class="formulario__boton"
+                        id="enviar"
+                        data-boton-enviar
+                        type="submit"
+                      >Eliminar</button>
+                      <span class="mensaje-error"></span>
+                      </div>
                 </form>
             </section>
         </main>

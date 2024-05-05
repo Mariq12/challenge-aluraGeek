@@ -3,13 +3,14 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    padding: 20px;
+    padding: 3% 5%;
 }
 
 /* Estilos para el lado derecho */
 .registerSide {
     background-color: #f9f9f9;
     padding: 20px;
+    margin: 0;
 }
 
 /* Estilos para el formulario */
@@ -18,21 +19,73 @@ form {
     grid-gap: 20px;
 }
 
-input, button {
-    padding: 5px;
+/* *FORMULARIO* */
+
+.banner__titulo {
+    font-weight: 600;
+    color: blue;
+    font-size: 32px;
+    width: 100%;
+    margin: 25px auto;
+    text-align: center;
 }
 
-button {
-    cursor: pointer;
-    background-color: #333;
-    color: white;
+
+.formulario__campo {
     border: none;
-    width: calc(50% - 5px);
-    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-button:hover {
-    background-color: #555;
+.formulario__campo select {
+    width: 95%;
+    font-size: 13px;
+    border: none;
+    color: #6f6e6e;
+    padding: 1em;
 }
+.formulario__campo select,
+.formulario__campo input {
+    margin-right: 40px;
+    margin-left: 25px;
+}
+.campo__completo {
+    display: block;
+    width: 90%;
+    padding: 1em;
+    font-size: 13px;
+    border: none;
+}
+
+.formulario__botones {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario__boton {
+    display: flex;
+    justify-content:center;
+    background-color: blue;
+    display: block;
+    border: none;
+    padding: 1em 4em;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color:white;
+}
+
+
+.mensaje-error {
+    display: block;
+    margin-top: 5px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .925rem;
+    color: red;
+}
+
 
 /* *MEDIA QUERIES* */
 /* Consulta de medios para cambiar a una sola columna en pantallas más pequeñas */
