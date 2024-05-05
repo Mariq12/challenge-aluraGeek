@@ -40,7 +40,7 @@ header {
 
 .menu__nav {
     display: block;
-    height: 40%;
+    height: 20%;
 }
 /* Estilo para la lista del menú */
 .menu__list {
@@ -74,9 +74,12 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    padding: 5vh 20vh;
+    padding: 20px;
 }
 
+h2 {
+    color: blue;
+}
 /* Estilos para el lado izquierdo */
 .homeSide {
     display: grid;
@@ -102,7 +105,7 @@ header {
 
 /* *Sección Footer */
 .footer {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: medium;
     text-align: center;
     background: var(--con-header);
