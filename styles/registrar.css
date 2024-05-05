@@ -48,6 +48,12 @@ form {
     padding: 1em;
     font-size: 13px;
     border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.campo__completo:hover {
+    border: 1px solid blue;
 }
 
 .formulario__botones {
@@ -89,6 +95,8 @@ form {
     font-style: italic;
     font-size: .925rem;
     color: red;
+    margin-left: 25px;
+    font-size: 12px;
 }
 
 
