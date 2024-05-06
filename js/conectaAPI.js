@@ -12,6 +12,6 @@ export async function listaProductos() {
         return conexionConvertida;
     } catch (error) {
         console.error("Error al conectar con la API:", error);
-        throw error; // Propaga el error para manejarlo en otro lugar si es necesario
+        throw error; 
     }
 }
