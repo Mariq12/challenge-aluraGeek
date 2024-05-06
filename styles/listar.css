@@ -22,7 +22,7 @@ table {
 
 
 th, td {
-    border: 1px solid rgb(224, 220, 220);
+    border: 1px solid var(--cor-de-tablet-th-td);
     padding: 8px;
     text-align: center;
 }
@@ -30,24 +30,16 @@ th, td {
 th {
     position: sticky;
     top: 0;
-    background-color: rgb(226, 224, 224);
+    background: var(--cor-de-second-tablet-th);
     z-index: 1;
 }
 
-/*.container-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-} */
 .control-select {
     border: none;
     width: 20px;
-    background-color: rgb(226, 224, 224);
+    background-color: var(--cor-de-second-tablet);
     margin-right: 10px;
 }
-
-
 
 .icons img {
     margin-left: 0;

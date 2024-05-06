@@ -9,6 +9,8 @@
     --cor-text-border: #0000FF;
     --cor-de-third-text: #FF0000;
     --cor-de-text-form:#6f6e6e;
+    --cor-de-tablet-th-td: rgb(224, 220, 220);
+    --cor-de-second-tablet-th: rgb(226, 224, 224);
 }
 
 /* Estilos generales */
