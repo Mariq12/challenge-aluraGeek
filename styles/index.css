@@ -17,6 +17,7 @@ article {
     justify-content: center;
     background: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    height: fit-content;
 }
 
 .card {
@@ -24,6 +25,7 @@ article {
     width: auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background:var(--cor-background);
+    height: fit-content;
 }
 
 .card .card-container--info {
@@ -55,3 +57,4 @@ article {
 .card-container--value img:hover {
     transform: scale(1.1);
 }
+
