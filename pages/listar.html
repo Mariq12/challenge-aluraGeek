@@ -32,7 +32,7 @@
             <section class="listarSide">
                 <h2>Listar Productos</h2>
                 <div class="listarSide__table">
-                    <table id="tabla-productos">
+                    <table id="tabla-productos" data-tablet>
                         <tr>
                             <th>ID</th>
                             <th>Imagen</th>
@@ -48,35 +48,14 @@
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>Imagen 1</td>
-                            <td>Producto 1</td>
-                            <td>Categoría 1</td>
+                            <td><img src="https://app.pardux.com/render/img-webp/107/premiumtech/Mesa-de-tr-653157614441c" alt="Imagen de ${producto.nombre}" style="width: 50px; height: auto;"></td>
+                            <td>Laptop HP 123</td>
+                            <td>Electrónica</td>
                             <td>Descripción 1</td>
-                            <td>$10.00</td>
+                            <td>$1060.00</td>
                             <td>100</td>
                             <td>Con IVA</td>
-                            <td>0%</td>
-                            <td class="container-icons">
-                                <figure class="icon-editar">
-                                    <img src="..\assets\icons\editar.png" alt="Icono de editar">
-                                </figure>
-                            </td>
-                            <td class="container-icons">
-                                <figure class="icon-eliminar">
-                                    <img src="..\assets\icons\borrar.png" alt="Icono de eliminar">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Imagen 2</td>
-                            <td>Producto 2</td>
-                            <td>Categoría 2</td>
-                            <td>Descripción 2</td>
-                            <td>$30.00</td>
-                            <td>150</td>
-                            <td>Sin IVA</td>
-                            <td>20%</td>
+                            <td>10%</td>
                             <td class="container-icons">
                                 <figure class="icon-editar">
                                     <img src="..\assets\icons\editar.png" alt="Icono de editar">
@@ -100,6 +79,6 @@
             </div>
         </section>
         <script src="../js/listar.js" type="module"></script>
-        <script src="../js/conectaAPI.js"></script>
+        <script src="../js/mostrarTablet.js" type="module"></script>
     </body>
 </html>
