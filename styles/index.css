@@ -14,7 +14,9 @@
 
 article {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    margin: 10px;
     background: var(--cor-de-second-text);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     height: fit-content;

@@ -1,48 +1,179 @@
-// Selecciona el formulario de registro
-const formularioRegistro = document.querySelector('.principal__formulario');
+import { listaProductos } from "./conectaAPI.js";
 
-// Selecciona el contenedor de productos
-const contenedorProductos = document.querySelector('.productos-container');
 
-// Escucha el evento de envío del formulario
-formularioRegistro.addEventListener('submit', agregarProducto);
+const listaProductosContainer = document.querySelector("[data-lista]");
 
-// Función para agregar un producto al contenedor de productos
-function agregarProducto(event) {
-    // Evita que el formulario se envíe
-    event.preventDefault();
-
-    // Obtén los valores del formulario
-    const nombre = document.getElementById('nombre').value;
-    const categoria = document.getElementById('categoria').value;
-    const descripcion = document.getElementById('descripcion').value;
-    const precio = document.getElementById('precio').value;
-    const cantidad = document.getElementById('cantidad').value;
-    const tipoIVA = document.getElementById('tipo_iva').value;
-    const descuento = document.getElementById('descuento').value;
-    const urlImagen = document.getElementById('url').value;
-
-    // Crea un nuevo elemento de producto
-    const nuevoProducto = document.createElement('li');
-    nuevoProducto.classList.add('producto');
-
-    // Construye el contenido HTML del producto
-    nuevoProducto.innerHTML = `
-        <div class="producto__detalle">
-            <h3>${nombre}</h3>
-            <p>Categoría: ${categoria}</p>
-            <p>Descripción: ${descripcion}</p>
-            <p>Precio: $${precio}</p>
-            <p>Cantidad: ${cantidad}</p>
-            <p>Tipo de IVA: ${tipoIVA}</p>
-            <p>Descuento: ${descuento}</p>
-            <img src="${urlImagen}" alt="Imagen del producto">
-        </div>
+// Función para crear una tarjeta de producto en el DOM
+function crearCard(nombre, precio, imagen, categoria) {
+    const nuevaCard = document.createElement("article");
+    nuevaCard.innerHTML = `
+        <figure class="card" alt="${categoria}">
+            <img class="card-container--img"
+                width="100%"
+                height="60%"
+                src="${imagen}"
+                alt="${categoria}">
+            <figcaption class="card-container--info">
+                <p class="card-container--title">${nombre}</p>
+                <div class="card-container--value">
+                    <p>$ ${precio.toFixed(2)}</p>
+                    <img class="card-container--icon" src="./assets/icons/borrar.png" alt="Icono de eliminar">
+                </div>
+            </figcaption>
+        </figure>
     `;
-
-    // Agrega el nuevo producto al contenedor de productos
-    contenedorProductos.appendChild(nuevoProducto);
-
-    // Limpia el formulario después de agregar el producto
-    formularioRegistro.reset();
+    return nuevaCard;
 }
+
+async function mostrarProductos() {
+    try {
+        const listaAPI = await listaProductos();
+        listaAPI.forEach(producto => {
+            listaProductosContainer.appendChild(crearCard(producto.nombre, producto.precio, producto.url_imagen, producto.categoria));
+        });
+    } catch (error) {
+        console.error("Error al obtener y mostrar los productos:", error);
+        listaProductosContainer.innerHTML = `<h2 class="mensaje__titulo">No fue posible cargar la lista de productos</h2>`;
+    }
+}
+
+mostrarProductos();
+
+
+
+/*import { listaProductos } from "./conectaAPI.js";
+
+
+const listaProductosContainer = document.querySelector("[data-lista]");
+
+// Función para crear una tarjeta de producto en el DOM
+function crearCard(nombre, precio, imagen, categoria) {
+    const nuevaCard = document.createElement("article");
+    nuevaCard.innerHTML = `
+        <figure class="card" alt="${categoria}">
+            <img class="card-container--img"
+                width="100%"
+                height="60%"
+                src="${imagen}"
+                alt="${categoria}">
+            <figcaption class="card-container--info">
+                <p class="card-container--title">${nombre}</p>
+                <div class="card-container--value">
+                    <p>$ ${precio.toFixed(2)}</p>
+                    <img class="card-container--icon" src="./assets/icons/borrar.png" alt="Icono de eliminar">
+                </div>
+            </figcaption>
+        </figure>
+    `;
+    return nuevaCard;
+}
+
+async function mostrarProductos() {
+    try {
+        const listaAPI = await listaProductos();
+        listaAPI.forEach(producto => {
+            listaProductosContainer.appendChild(crearCard(producto.nombre, producto.precio, producto.imagen, producto.categoria));
+        });
+    } catch (error) {
+        console.error("Error al obtener y mostrar los productos:", error);
+        listaProductosContainer.innerHTML = `<h2 class="mensaje__titulo">No fue posible cargar la lista de productos</h2>`;
+    }
+}
+
+mostrarProductos();
+*/
+
+
+/*import { listaProductos } from "./conectaAPI.js";
+
+
+const listaProductosContainer = document.querySelector("[data-lista]");
+
+// Función para crear una tarjeta de producto en el DOM
+function crearCard(nombre, precio, imagen, categoria) {
+    const nuevaCard = document.createElement("article");
+    nuevaCard.innerHTML = `
+        <figure class="card" alt="${categoria}">
+            <img class="card-container--img"
+                width="100%"
+                height="60%"
+                src="${imagen}"
+                alt="${categoria}">
+            <figcaption class="card-container--info">
+                <p class="card-container--title">${nombre}</p>
+                <div class="card-container--value">
+                    <p>$ ${precio.toFixed(2)}</p>
+                    <img class="card-container--icon" src="./assets/icons/borrar.png" alt="Icono de eliminar">
+                </div>
+            </figcaption>
+        </figure>
+    `;
+    return nuevaCard;
+}
+
+async function mostrarProductos() {
+    try {
+        const listaAPI = await listaProductos();
+        listaAPI.forEach(producto => {
+            listaProductosContainer.appendChild(crearCard(producto.nombre, producto.precio, producto.imagen, producto.categoria));
+        });
+    } catch (error) {
+        console.error("Error al obtener y mostrar los productos:", error);
+        listaProductosContainer.innerHTML = `<h2 class="mensaje__titulo">No fue posible cargar la lista de productos</h2>`;
+    }
+}
+
+mostrarProductos();
+
+*/
+/*import { conectaAPI } from "./conectaAPI.js";
+
+const listaProductos = document.querySelector("[data-lista]");
+
+// Función para crear una tarjeta de producto al DOM
+function crearCard(nombre, precio, imagen, categoria) {
+    const nuevoProducto = document.createElement("figure");
+    nuevoProducto.className="card";
+    nuevoProducto.innerHTML = `<figure class="card" alt="${categoria}">
+            <img class="card-container--img"
+                width="100%"
+                height="60%"
+                src="${imagen}"
+                alt="${categoria}">
+            <figcaption class="card-container--info">
+                <p class="card-container--title">${nombre}</p>
+                <div class="card-container--value">
+                    <p>$ ${precio.toFixed(2)}</p>
+                    <img class="card-container--icon" src="./assets/icons/borrar.png" alt="Icono de eliminar">
+                </div>
+            </figcaption>
+        </figure>
+    `;
+    return nuevoProducto;
+}
+
+async function listaProductos() {
+    try{
+        const listaAPI = await conectaAPI.listaProductos();
+        listaAPI.forEach(producto => lista
+            .appendChild(crearCard(producto.nombre, producto.precio,producto.imagen, producto.categoria)));
+    }catch{
+        lista.innerHTML=`<h2 class="mensaje__titulo">No fue posible cargar la lista de videos</h2>`;
+    }
+}
+
+listaProductos();
+*/
+
+/*async function listaProductos() {
+    try{
+        const listaAPI = await conectaAPI.listaProductos();
+        listaAPI.forEach(producto => lista
+            .appendChild(crearCard(producto.titulo, producto.descripcion, producto.url, producto.imagen)));
+    }catch{
+        lista.innerHTML=`<h2 class="mensaje__titulo">No fue posible cargar la lista de videos</h2>`;
+    }
+}
+
+listaProductos();
+*/
