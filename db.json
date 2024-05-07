@@ -1,70 +1,92 @@
 {
-    "productos": [
-        {
-            "id": 1,
-            "nombre": "HP Laptop 15-fc0009lao",
-            "categoria": "Categoría del producto 1",
-            "descripcion": "Descripción del producto",
-            "precio": 1000,
-            "cantidad": 0,
-            "tipo_iva": "Tipo de IVA",
-            "descuento": 0,
-            "url_imagen": "https://app.pardux.com/render/img-webp/107/premiumtech/Mesa-de-tr-653157614441c"
-        },
-        {
-            "id": 2,
-            "nombre": "LAPTOP/NOTEBOOK HP AMD R7-7730U",
-            "categoria": "Categoría del producto 2",
-            "descripcion": "Descripción del producto",
-            "precio": 1200,
-            "cantidad": 0,
-            "tipo_iva": "Tipo de IVA",
-            "descuento": 0,
-            "url_imagen": "https://www.computron.com.ec/wp-content/uploads/2023/08/15-FC0015LA-1.jpg"
-        },
-        {
-            "id": 3,
-            "nombre": "Laptop Notebook HP 250",
-            "categoria": "Categoría del producto 1",
-            "descripcion": "Descripción del producto",
-            "precio": 1240,
-            "cantidad": 0,
-            "tipo_iva": "Tipo de IVA",
-            "descuento": 0,
-            "url_imagen": "https://digitalbox.com.ec/5524-thickbox_default/laptop-notebook-hp-250-g7-intel-core-i3-ram-4gb-disco-hdd-1tb-1560-win-10.jpg"
-        },
-        {
-            "id": 4,
-            "nombre": "Nombre del producto",
-            "categoria": "Categoría del producto 2",
-            "descripcion": "Descripción del producto",
-            "precio": 0,
-            "cantidad": 0,
-            "tipo_iva": "Tipo de IVA",
-            "descuento": 0,
-            "url_imagen": "https://i5.walmartimages.com/asr/57bb38e9-90a1-4532-8f4b-0e76e4538846.b8710b156887abf438daa8aa6905b47d.jpeg"
-        },
-        {
-            "id": 5,
-            "nombre": "Nombre del producto",
-            "categoria": "Categoría del producto 1",
-            "descripcion": "Descripción del producto",
-            "precio": 0,
-            "cantidad": 0,
-            "tipo_iva": "Tipo de IVA",
-            "descuento": 0,
-            "url_imagen": "https://i5.walmartimages.com/asr/57bb38e9-90a1-4532-8f4b-0e76e4538846.b8710b156887abf438daa8aa6905b47d.jpeg"
-        },
-        {
-            "id": 6,
-            "nombre": "Nombre del producto",
-            "categoria": "Categoría del producto 2",
-            "descripcion": "Descripción del producto",
-            "precio": 0,
-            "cantidad": 0,
-            "tipo_iva": "Tipo de IVA",
-            "descuento": 0,
-            "url_imagen": "https://i5.walmartimages.com/asr/57bb38e9-90a1-4532-8f4b-0e76e4538846.b8710b156887abf438daa8aa6905b47d.jpeg"
-        }
-    ]
+  "productos": [
+    {
+      "id": "1",
+      "url_imagen": "https://app.pardux.com/render/img-webp/107/premiumtech/Mesa-de-tr-653157614441c",
+      "nombre": "HP Laptop 15-fc0009lao",
+      "categoria": "Categoría del producto 1",
+      "descripcion": "Descripción del producto",
+      "precio": 1000,
+      "cantidad": 0,
+      "tipo_iva": "Tipo de IVA",
+      "descuento": 0
+    },
+    {
+      "id": "2",
+      "url_imagen": "https://www.computron.com.ec/wp-content/uploads/2023/08/15-FC0015LA-1.jpg",
+      "nombre": "LAPTOP/NOTEBOOK HP AMD R7-7730U",
+      "categoria": "Categoría del producto 2",
+      "descripcion": "Descripción del producto",
+      "precio": 1200,
+      "cantidad": 0,
+      "tipo_iva": "Tipo de IVA",
+      "descuento": 0
+    },
+    {
+      "id": "3",
+      "url_imagen": "https://digitalbox.com.ec/5524-thickbox_default/laptop-notebook-hp-250-g7-intel-core-i3-ram-4gb-disco-hdd-1tb-1560-win-10.jpg",
+      "nombre": "Laptop Notebook HP 250",
+      "categoria": "Categoría del producto 1",
+      "descripcion": "Descripción del producto",
+      "precio": 1240,
+      "cantidad": 0,
+      "tipo_iva": "Tipo de IVA",
+      "descuento": 0
+    },
+    {
+      "id": "4",
+      "url_imagen": "https://i5.walmartimages.com/asr/57bb38e9-90a1-4532-8f4b-0e76e4538846.b8710b156887abf438daa8aa6905b47d.jpeg",
+      "nombre": "Nombre del producto",
+      "categoria": "Categoría del producto 2",
+      "descripcion": "Descripción del producto",
+      "precio": 0,
+      "cantidad": 0,
+      "tipo_iva": "Tipo de IVA",
+      "descuento": 0
+    },
+    {
+      "id": "5",
+      "url_imagen": "https://i5.walmartimages.com/asr/57bb38e9-90a1-4532-8f4b-0e76e4538846.b8710b156887abf438daa8aa6905b47d.jpeg",
+      "nombre": "Nombre del producto",
+      "categoria": "Categoría del producto 1",
+      "descripcion": "Descripción del producto",
+      "precio": 0,
+      "cantidad": 0,
+      "tipo_iva": "Tipo de IVA",
+      "descuento": 0
+    },
+    {
+      "id": "6",
+      "url_imagen": "https://i5.walmartimages.com/asr/57bb38e9-90a1-4532-8f4b-0e76e4538846.b8710b156887abf438daa8aa6905b47d.jpeg",
+      "nombre": "Nombre del producto",
+      "categoria": "Categoría del producto 2",
+      "descripcion": "Descripción del producto",
+      "precio": 0,
+      "cantidad": 0,
+      "tipo_iva": "Tipo de IVA",
+      "descuento": 0
+    },
+    {
+      "id": "7",
+      "url_imagen": "https://i5.walmartimages.com/asr/57bb38e9-90a1-4532-8f4b-0e76e4538846.b8710b156887abf438daa8aa6905b47d.jpeg",
+      "nombre": "pantalon jeans",
+      "categoria": "ropa",
+      "descripcion": "pantalon para mujer",
+      "precio": 25,
+      "cantidad": 200,
+      "tipo_iva": "conIVA",
+      "descuento": 20
+    },
+    {
+      "id": "97f7",
+      "url_imagen": "https://yesfashion.ec/cdn/shop/products/Jean-para-mujer-con-rasgados-1_6bee29a5-b610-4364-9b8a-1992bd7560fd_1024x1024.jpg?v=1670801047",
+      "nombre": "pantalon jeans",
+      "categoria": "ropa",
+      "descripcion": "pantalon para mujer",
+      "precio": 25,
+      "cantidad": 200,
+      "tipo_iva": "conIVA",
+      "descuento": 5
+    }
+  ]
 }

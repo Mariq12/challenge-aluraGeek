@@ -35,6 +35,20 @@
                 </h2>
                 <form class="principal__formulario" data-formulario>
                     <fieldset class="formulario__campo">
+                        <label class="campo__etiqueta" for="url">URL de la imagen</label>
+                        <input
+                            name="url_imagen"
+                            id="url_imagen"
+                            class="campo__completo"
+                            type="url"
+                            placeholder="URL de la imagen"
+                            minlength="3"
+                            required
+                            data-url
+                        >
+                        <span class="mensaje-error"></span>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
                         <label class="campo__etiqueta" for="nombre">Nombre</label>
                         <input
                             name="nombre"
@@ -122,20 +136,7 @@
                         >
                         <span class="mensaje-error"></span>
                     </fieldset>
-                    <fieldset class="formulario__campo">
-                        <label class="campo__etiqueta" for="url">URL de la imagen</label>
-                        <input
-                            name="url"
-                            id="url"
-                            class="campo__completo"
-                            type="url"
-                            placeholder="URL de la imagen"
-                            minlength="3"
-                            required
-                            data-url
-                        >
-                        <span class="mensaje-error"></span>
-                    </fieldset>
+                    
                     <div class="formulario__botones">
                         <button
                             value="Siguiente"

@@ -1,17 +1,17 @@
-import { listaProductos } from "./conectaAPI.js";
+import { conectaAPI } from "./conectaAPI.js";
 
 
 const listaProductosContainer = document.querySelector("[data-lista]");
 
 // Función para crear una tarjeta de producto en el DOM
-function crearCard(nombre, precio, imagen, categoria) {
+function crearCard(url_imagen, nombre, precio, categoria) {
     const nuevaCard = document.createElement("article");
     nuevaCard.innerHTML = `
         <figure class="card" alt="${categoria}">
             <img class="card-container--img"
                 width="100%"
                 height="60%"
-                src="${imagen}"
+                src="${url_imagen}"
                 alt="${categoria}">
             <figcaption class="card-container--info">
                 <p class="card-container--title">${nombre}</p>
@@ -27,9 +27,9 @@ function crearCard(nombre, precio, imagen, categoria) {
 
 async function mostrarProductos() {
     try {
-        const listaAPI = await listaProductos();
+        const listaAPI = await conectaAPI.listaProductos();
         listaAPI.forEach(producto => {
-            listaProductosContainer.appendChild(crearCard(producto.nombre, producto.precio, producto.url_imagen, producto.categoria));
+            listaProductosContainer.appendChild(crearCard(producto.url_imagen, producto.nombre, producto.precio, producto.categoria));
         });
     } catch (error) {
         console.error("Error al obtener y mostrar los productos:", error);

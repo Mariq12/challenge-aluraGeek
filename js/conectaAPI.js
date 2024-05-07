@@ -1,5 +1,5 @@
 // Conecta con la API para obtener los productos
-export async function listaProductos() {
+async function listaProductos() {
     try {
         const conexion = await fetch("http://localhost:3001/productos", {
             method: "GET",
@@ -14,4 +14,32 @@ export async function listaProductos() {
         console.error("Error al conectar con la API:", error);
         throw error; 
     }
+}
+
+async function enviarProducto(url_imagen, nombre, categoria, descripcion, precio, cantidad, tipo_iva, descuento){
+    const connection = await fetch('http://localhost:3001/productos', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            url_imagen: url_imagen,
+            nombre: nombre,
+            categoria: categoria,
+            descripcion: descripcion,
+            precio: precio,
+            cantidad: cantidad,
+            tipo_iva: tipo_iva,
+            descuento: descuento
+        })
+    })
+    const connectionConvert = connection.json();
+
+    if(!connection.ok){
+        throw new Error("No es posible enviar el video");
+    }
+
+    return connectionConvert;
+}
+
+export const conectaAPI={
+	listaProductos,enviarProducto
 }

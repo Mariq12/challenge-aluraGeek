@@ -1,4 +1,4 @@
-import { listaProductos } from "./conectaAPI.js";
+import { conectaAPI } from "./conectaAPI.js";
 
 const listaProductosContainer = document.querySelector("[data-tablet]");
 
@@ -32,7 +32,7 @@ function crearFilaProducto(id, url_imagen, nombre, categoria, descripcion, preci
 // Función para mostrar los productos en la tabla
 async function mostrarProductosEnTabla() {
     try {
-        const listaAPI = await listaProductos();
+        const listaAPI = await conectaAPI.listaProductos();
         listaAPI.forEach(producto => {
             listaProductosContainer.appendChild(crearFilaProducto(producto.id, producto.url_imagen, producto.nombre, producto.categoria, producto.descripcion, producto.precio, producto.cantidad, producto.tipo_iva, producto.descuento));
         });
