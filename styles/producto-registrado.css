@@ -1,0 +1,17 @@
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.mensaje__imagen {
+    width: 30%;
+}
+
+.mensaje__titulo {
+    color: var(--cor-text-border);
+    font-weight: bold;
+    font-size: 21px;
+}

@@ -48,7 +48,7 @@ formulario.addEventListener("submit", (e) => {
   };
 
   localStorage.setItem("registro", JSON.stringify(listaRespuestas));
-  window.location.href = "./registrar.html";
+  window.location.href = "./producto-registrado.html";
 });
 
 enviarBoton.addEventListener("click", (e) => {

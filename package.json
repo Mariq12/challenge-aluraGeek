@@ -4,7 +4,7 @@
   "description": "En éste desafío se desarrollara una aplicación para:\r * listar\r * registrar\r * eliminar\r productos\r ---\r ## Principales Tecnologías utilizadas\r * HTML\r * CSS\r * JAVASCRIPT\r ---\r ## Tecnologías secundaria\r * VsCode\r * Git\r * GitHub\r ---\r ## Herramientas de Gestión y Diseño\r * Trello: herramienta de colaboración y gestión de proyectos.\r * Figma:  se creo un modelo que muestra una representación visual del Alura Geek.\r ---",
   "main": "index.js",
   "scripts": {
-    "db": "npx json-server --watch db.json --port 3001"
+    "dev": "npx json-server --watch db.json --port 3001"
   },
   "author": "Flor Maria Labanda Puchaicela",
   "license": "ISC",

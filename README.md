@@ -24,8 +24,11 @@ productos
 1. npm init
 2. npm install
 3. npx json-server --watch db.json --port 3001
+
 **En el package.json se agrega**
 
         "db": "npx json-server --watch db.json --port 3001"
 
-4. npm run db (ejecuta el servidor JSON server, observando el archivo `db.json` en el puerto 3001.)
+4. npm run dev 
+
+Con el comando `npm run dev`, se ejecuta el servidor JSON server, observando el archivo `db.json` en el puerto 3001.

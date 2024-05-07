@@ -45,12 +45,13 @@
                             minlength="3"
                             maxlength="100"
                             required
+                            data-nombre
                         >
                         <span class="mensaje-error"></span>
                     </fieldset>
                     <fieldset class="formulario__campo">
                         <label class="campo__etiqueta" for="categoria">Categoría</label>
-                        <select name="categoria" id="categoria" required>
+                        <select name="categoria" id="categoria" required data-categoria>
                             <option value="" disabled selected>Seleccione una categoría *</option>
                             <option value="electronica">Electrónica</option>
                             <option value="ropa">Ropa</option>
@@ -66,6 +67,7 @@
                             type="text"
                             placeholder="Descripción del producto"
                             maxlength="200"
+                            data-descripcion
                         >
                         <span class="mensaje-error"></span>
                     </fieldset>
@@ -79,6 +81,7 @@
                             placeholder="Precio del producto"
                             minlength="1"
                             required
+                            data-precio
                         >
                         <span class="mensaje-error"></span>
                     </fieldset>
@@ -92,12 +95,13 @@
                             placeholder="Cantidad del producto"
                             minlength="1"
                             required
+                            data-cantidad
                         >
                         <span class="mensaje-error"></span>
                     </fieldset>
                     <fieldset class="formulario__campo">
                         <label class="campo__etiqueta" for="tipo_iva">Tipo de IVA</label>
-                        <select name="tipo_iva" id="tipo_iva" required>
+                        <select name="tipo_iva" id="tipo_iva" required data-tipo_iva>
                             <option value="" disabled selected>Seleccione tipo de IVA *</option>
                             <option value="conIVA">Con IVA</option>
                             <option value="sinIVA">Sin IVA</option>
@@ -114,6 +118,7 @@
                             placeholder="Descuento"
                             minlength="1"
                             required
+                            data-descuento
                         >
                         <span class="mensaje-error"></span>
                     </fieldset>
@@ -127,6 +132,7 @@
                             placeholder="URL de la imagen"
                             minlength="3"
                             required
+                            data-url
                         >
                         <span class="mensaje-error"></span>
                     </fieldset>
@@ -135,7 +141,6 @@
                             value="Siguiente"
                             class="formulario__boton"
                             id="enviar"
-                            data-boton-enviar
                             type="submit"
                         >Registrar</button>
                         <span class="mensaje-error"></span>
@@ -145,7 +150,6 @@
                             value="Siguiente"
                             class="formulario__boton"
                             id="eliminar"
-                            data-boton-enviar
                             type="submit"
                         >Eliminar</button>
                         <span class="mensaje-error"></span>
@@ -161,5 +165,7 @@
             </div>
         </section>
         <script src="../js/script.js" type="module"></script>
+        <script src="../js/crearProducto.js" type="module"></script>
+
     </body>
 </html>
