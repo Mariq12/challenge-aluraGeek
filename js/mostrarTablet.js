@@ -22,7 +22,7 @@ function crearFilaProducto(id, url_imagen, nombre, categoria, descripcion, preci
         </td>
         <td class="container-icons">
             <figure class="icon-eliminar">
-            <img src="../assets/icons/borrar.png" alt="Icono de borrar">
+            <img src="../assets/icons/borrar.png" data-remove="true" data-id="${id}"/>
             </figure>
         </td>
     `;
@@ -30,7 +30,7 @@ function crearFilaProducto(id, url_imagen, nombre, categoria, descripcion, preci
 }
 
 // Función para mostrar los productos en la tabla
-async function mostrarProductosEnTabla() {
+export async function mostrarProductosEnTabla() {
     try {
         const listaAPI = await conectaAPI.listaProductos();
         listaAPI.forEach(producto => {
