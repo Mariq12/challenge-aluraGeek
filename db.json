@@ -1,28 +1,6 @@
 {
   "productos": [
     {
-      "id": "12a1",
-      "url_imagen": "https://app.pardux.com/render/img-webp/107/premiumtech/Mesa-de-tr-653157614441c",
-      "nombre": "HP Laptop 15-fc0009lao",
-      "categoria": "Categoría del producto 1",
-      "descripcion": "Descripción del producto",
-      "precio": 1000,
-      "cantidad": 0,
-      "tipo_iva": "Tipo de IVA",
-      "descuento": 0
-    },
-    {
-      "id": "22b2",
-      "url_imagen": "https://www.computron.com.ec/wp-content/uploads/2023/08/15-FC0015LA-1.jpg",
-      "nombre": "LAPTOP/NOTEBOOK HP AMD R7-7730U",
-      "categoria": "Categoría del producto 2",
-      "descripcion": "Descripción del producto",
-      "precio": 1200,
-      "cantidad": 0,
-      "tipo_iva": "Tipo de IVA",
-      "descuento": 0
-    },
-    {
       "id": "33s1",
       "url_imagen": "https://digitalbox.com.ec/5524-thickbox_default/laptop-notebook-hp-250-g7-intel-core-i3-ram-4gb-disco-hdd-1tb-1560-win-10.jpg",
       "nombre": "Laptop Notebook HP 250",
@@ -98,17 +76,6 @@
       "cantidad": 20,
       "tipo_iva": "conIVA",
       "descuento": 5
-    },
-    {
-      "id": "37d7",
-      "url_imagen": "https://www.crucial.mx/content/dam/crucial/articles/for-pc-builders/new025-how-to-upgrade-your-pc/modern-gaming-pc.jpg.transform/medium-jpg/img.jpg",
-      "nombre": "PC35",
-      "categoria": "electronica",
-      "descripcion": "PC 21",
-      "precio": 1300,
-      "cantidad": 200,
-      "tipo_iva": "conIVA",
-      "descuento": 20
     }
   ]
 }

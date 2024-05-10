@@ -7,7 +7,6 @@ async function listaProductos() {
                 "Content-type": "application/json"
             }
         });
-
         const conexionConvertida = await conexion.json();
         return conexionConvertida;
     } catch (error) {
@@ -15,7 +14,6 @@ async function listaProductos() {
         throw error; 
     }
 }
-
 async function enviarProducto(url_imagen, nombre, categoria, descripcion, precio, cantidad, tipo_iva, descuento){
     const connection = await fetch('http://localhost:3001/productos', {
         method: 'POST',
@@ -32,14 +30,26 @@ async function enviarProducto(url_imagen, nombre, categoria, descripcion, precio
         })
     })
     const connectionConvert = connection.json();
-
     if(!connection.ok){
         throw new Error("No es posible enviar el video");
     }
-
     return connectionConvert;
 }
 
+// Agrega esta función para eliminar un producto
+async function eliminarProducto(id) {
+    const connection = await fetch(`http://localhost:3001/productos/${id}`, {
+        method: "DELETE",
+      });
+      const convertConnection = connection.json();
+    
+      if (!connection.ok) {
+        throw new Error("No se ha podido eliminar el producto");
+      }
+      
+      return convertConnection;
+    }
+
 export const conectaAPI={
-	listaProductos,enviarProducto
+	listaProductos,enviarProducto,eliminarProducto
 }

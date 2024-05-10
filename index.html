@@ -33,7 +33,7 @@
                 <div class="full-width">
                     <h2>Mis Productos</h2>
                 </div>
-                <section class="productos" data-lista>
+                <section class="productos">
                     <article>
                         <figure class="card" alt="Producto">
                             <img
@@ -47,7 +47,7 @@
                                 <p class="card-container--title">Laptop HP 123</p>
                                 <div class="card-container--value">
                                     <p>$ 1060.00</p>
-                                    <img class="card-container--icon" src="./assets/icons/borrar.png" alt="Icono de eliminar">
+                                    <img class="card-container--icon" src="./assets/icons/borrar.png" data-remove="true" data-id="${id}"/>
                                 </div>
                             </figcaption>
                         </figure>
@@ -65,5 +65,6 @@
         </section>
         <script src="../js/index.js" type="module"></script>
         <script src="../js/mostrar.js" type="module"></script>
+        <script src="../js/eliminarProducto.js" type="module"></script>
     </body>
 </html>

@@ -16,10 +16,10 @@ async function crearProducto(evento) {
     const tipo_iva = document.querySelector("[data-tipo_iva]").value;
     const descuento = parseFloat(document.querySelector("[data-descuento]").value);
 
-    
+    const itemId = crypto.randomUUID();
 
     try {
-       await conectaAPI.enviarProducto(url_imagen, nombre, categoria, descripcion, precio, cantidad, tipo_iva, descuento);
+       await conectaAPI.enviarProducto(temId, url_imagen, nombre, categoria, descripcion, precio, cantidad, tipo_iva, descuento);
         
         // Redirigir a la página de confirmación
         window.location.href = "../pages/producto-registrado.html";

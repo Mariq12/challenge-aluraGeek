@@ -49,3 +49,8 @@ th {
 .icons:hover {
     transform: scale(1.2);
 }
+/* Agrega este estilo para cambiar el cursor cuando se pase sobre los botones de eliminar */
+.icon-eliminar {
+    cursor: pointer;
+    border: none;
+}
