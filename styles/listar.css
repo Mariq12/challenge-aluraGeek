@@ -50,24 +50,7 @@ th {
     transform: scale(1.2);
 }
 /* Agrega este estilo para cambiar el cursor cuando se pase sobre los botones de eliminar */
-.icono-editar,
 .icon-eliminar {
     cursor: pointer;
     border: none;
-}
-
-#formulario-flotante {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    z-index: 9999;
-    display: none;
-}
-
-.hidden {
-    display: none;
 }
